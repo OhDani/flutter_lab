@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.blueGrey[900],
         appBar: AppBar(
@@ -20,10 +21,10 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(
-                Icons.diamond,
-                color: Colors.white,
-                size: 100.0,
+              Image(
+                image: AssetImage('images/diamond.png'),
+                width: 180,
+                height: 180,
               ),
               SizedBox(height: 20),
               Text(
