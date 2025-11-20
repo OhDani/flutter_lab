@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
             children: [
               const CircleAvatar(
                 radius: 50,
-                backgroundImage: AssetImage('images/avatar.png'), // thêm ảnh của bạn
+                backgroundImage: AssetImage('images/avatar.png'), 
               ),
               const Text(
                 'Nguyen Van A',
