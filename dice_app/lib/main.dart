@@ -11,10 +11,11 @@ class DiceApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.red,
         appBar: AppBar(
-          title: const Text('Dicee'),
+          title: const Text('Dice'),
           backgroundColor: Colors.red,
         ),
         body: const DicePage(),
